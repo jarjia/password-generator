@@ -1,0 +1,61 @@
+.pass-div {
+    background: linear-gradient(120deg, rgb(255, 255, 50), rgb(255, 223, 223), rgb(50, 255, 50));
+    width: 24em;
+    margin: 150px auto;
+    padding: 25px;
+    text-align: center;
+}
+.password {
+    width: 100%;
+    height: 50px;
+    background-color: limegreen;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 5px;
+}
+.password-div {
+    align-self: center;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.5px;
+}
+.pass-h1 {
+    font-family: sans-serif;
+    color: limegreen;
+}
+.copy-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid black;
+    font-family: sans-serif;
+    color: #111111;
+}
+.gen-pass {
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #308d46;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 25px 0 0 0;
+}
+.pass-length {
+    text-align: center;
+    margin: 20px 0 5px 0;
+}
+.num-inp {
+    text-align: left;
+    margin: 0 0 0 7px;
+}
+.checkboxes {
+    margin: 15px 45px 0 45px;
+    text-align: left;
+}
+.checkboxes > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
