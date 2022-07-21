@@ -15,7 +15,7 @@ const App = () => {
   const [textCopyed, setTextCopyed] = useState(false)
 
   useEffect(() => {
-    
+
     let numbers = number.split('')
     let uppercaseLetters = upperCaseLetters.split('')
     let lowercaseLetters = lowerCaseLetters.split('')
@@ -42,10 +42,16 @@ const App = () => {
   const handleChange = (event) => {
       const {name, value, type, checked} = event.target
       setNumInp(prevFormData => {
+        if(value > 36) {
           return {
-              ...prevFormData,
-              [name]: type === "checkbox" ? checked : value
+            ...prevFormData,
+            number: '36'
           }
+        }
+        return {
+            ...prevFormData,
+            [name]: type === "checkbox" ? checked : value
+        }
       })
   }
 
@@ -61,7 +67,7 @@ const App = () => {
         return prev
       })
     }else {
-      alert('jaja')
+      alert('Please select at least one checkbox')
     }
   }
 
