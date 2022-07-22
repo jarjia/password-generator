@@ -42,10 +42,10 @@ const App = () => {
   const handleChange = (event) => {
       const {name, value, type, checked} = event.target
       setNumInp(prevFormData => {
-        if(value > 36) {
+        if(value > 30) {
           return {
             ...prevFormData,
-            number: '36'
+            number: '30'
           }
         }
         return {

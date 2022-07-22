@@ -1,8 +1,11 @@
+body {
+    background-color: rgb(224, 255, 224);
+}
 .pass-div {
     background: linear-gradient(120deg, rgb(255, 255, 50), rgb(255, 223, 223), rgb(50, 255, 50));
     width: 24em;
     max-width: 30em;
-    margin: 150px auto;
+    margin: 120px auto;
     padding: 25px;
     text-align: center;
 }
