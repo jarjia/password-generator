@@ -23,16 +23,16 @@ const App = () => {
 
     setPassArr(prev => {
       prev = []
-      if(numInp.isUppercase === true) {
+      if(numInp.isUppercase) {
         prev.push(uppercaseLetters)
       }
-      if(numInp.isLowercase === true) {
+      if(numInp.isLowercase) {
         prev.push(lowercaseLetters)
       }
-      if(numInp.isNumber === true) {
+      if(numInp.isNumber) {
         prev.push(numbers)
       }
-      if(numInp.isSymbol === true) {
+      if(numInp.isSymbol) {
         prev.push(symbols)
       }
       return prev
@@ -42,10 +42,11 @@ const App = () => {
   const handleChange = (event) => {
       const {name, value, type, checked} = event.target
       setNumInp(prevFormData => {
-        if(value > 30) {
+        let maxLength = 30;
+        if(value > maxLength) {
           return {
             ...prevFormData,
-            number: '30'
+            number: maxLength
           }
         }
         return {
